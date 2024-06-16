@@ -1,0 +1,203 @@
+:
+	C Programming Tokens
+
+When the preprocessor lexical convension is done the program is then reduce 
+to sequence of tokens.
+
+	There are six class of tokens .
+
+1) Identifier
+2) keyword
+3) constant
+4) operators
+5) string literals
+6) seperators (collective of white space) newline, vertical/horizontal tab, feedform ( ASCII TABLE  )
+
+
+			FIRST TOKEN OF C LANGUAGE
+
+		IDENTIFIER
+	
+	What's identifier?
+
+ Identifier is a name you give to :
+1) function
+2) variable
+3) pointers
+4) arrays
+
+ JAVASCRIPT :  var number;
+ PHP	    :  $pen
+ C/C++	    : int age;
+
+	Simple prototype of variable is
+		eg : datatype identifier
+
+memory 	address can be 0x13231adf343
+ 
+
+They're identifiers already taken by the language itself.
+
+
+				SECOND TOKEN
+
+			KEYWORDS
+
+	What's keyword?
+Keyword are special identifier used by C language to perform special
+system taskes.
+
+	How many keywords are there in C language?
+
+They're 32 keyword in C language.
+
+auto, break, continue, static, typedef, volatile, enum, extern, int,
+float, char, double, struct, switch, case, default, for, while, do,
+if, else, elif, const, union, sizeof, long, void, signed, unsigned,
+return, goto, short
+
+	
+			THIRD TOKEN
+		CONSTANT
+
+	What's constant?
+Constants are define global or local variables that doesn't change it 
+value even when being called.
+
+	How're constants defined?
+ first : using the macro substitution and must be in upper case letter
+	eg: #define NUM	100
+
+ second : using the keyword call ( const ), UPPER OR LOWER case letter
+	eg: const int x = 1000;  or int const x = 100;
+	eg: const int X = 500;  or int const X = 200;
+
+	Types of constants using ( const ) keyword.	
+	1 ) character constant	 | const char ch = 'b';  | char const ch = 'c';
+	2 ) integer constant  	 | const int i = 0;      | int const i = 2;
+	3 ) enumeration constant | const enum { ... };   | enum const { ... };
+	4 ) float constant	 | const float pi = 3.14;| float const pi = 2.5;
+
+
+				FOUR TOKEN
+
+			OPERATORS
+	
+	What's operator?
+
+ Operator are way in which computer perform arithmetic and logic unit.
+
+ NOTE:
+ 	Operators in C language uses what is called :
+		Evaluation of precedence
+
+	eg : SYMBOLS 	() {} , . -> # % & && | || ; = ==
+
+	OPERATORS				ASSOCIATIVITY
+
+	() [] -> .				left to right
+!  ~  ++  --  +  -  *  &  (type)  sizeof	right to left
+       *  /  %					left to right
+       +  -					left to right
+       <<  >>   				left to right
+   <  <=  >  >=					left to right
+      ==   !=					left to right
+         &					left to right
+	 ^					left to right
+	 |					left to right
+	 &&					left to right
+	 ||					left to right
+	 ?:					right to left
+=  +=  -=  *=  /=  %=  &=  ^=  |=  <<=  >>=     right to left
+         ,					left to right
+
+
+BINARY :
+	AND LOGICAL, way which computer can check for conditons
+		
+	0	0 	0
+	1	0	0
+	0	1	0
+	1	1	1
+
+BINARY :
+	OR LOGICAL, way which computer can check for conditions
+	
+	0	0	0
+	1	0	1
+	0	1	1
+	1	1	1
+
+	
+
+ BODMAS :
+	B = bracket
+	O = of
+	D = division
+	M = multiplication
+	A = addition
+	s = substraction
+
+	eg : [ 7 x 4 ] / 2 x  [ 4 + 5 ] - 8
+		28 / 2 x 9 - 8
+   		14 x 9 - 8
+		126 - 8
+		118	
+
+
+				FIFTH TOKEN
+
+			STRING LITERALS
+
+	What's string literal?
+
+ String literal are set of characters encoded in double quote ( " " ).
+	
+	NOTE : There is no such thing has string keyword in C language
+
+		eg : char ch = 'f';
+
+	There're two ways to represent a string in c language.
+		Those two ways is using DATA STRUCTURE
+
+	1 ) using arrays :
+		char arr[] = "pls follow, like and share my videos \n";
+
+	2 ) using a pointer :
+		char *ptr = "pls follow, like and share my videos \0";
+
+
+
+
+
+		A FRINEND OF MY FROM UGANDA 
+
+
+	Currently building a website called :
+			https://techiglobal.com
+			www.techiglobal.com       
+
+
+
+				SIXTH TOKEN
+
+		SEPERATOR
+
+	What's seperator?
+
+Seperators are ascii or unicode printable and non-printable charset.
+
+	How can you view the ascii?
+		1 ) by using the internet.
+		2 ) by using the linux terminal
+
+
+		TOOLS WE NEED TO START WRITING C CODE
+
+ 1 ) Compiler   : gcc,   clang,    cc
+ 2 ) editor 	: vim,	 nano,   pico,	emac 
+ 3 ) Gdb	: gun gdb debugger
+ 4 ) Makefile	: make program
+ 5 ) Git	: gnu git
+
+
