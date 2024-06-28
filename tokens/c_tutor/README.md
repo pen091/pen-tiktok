@@ -1,6 +1,9 @@
 
+			# HOW TO RUN THE C PROGRAM #
+	
+	# Type :
+			sudo make
 
-		# To Run This Program #
 
-	Type :
-			sudo make 
+	# To Clean :
+			sudo make clean

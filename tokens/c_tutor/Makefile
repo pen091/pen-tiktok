@@ -1,24 +1,21 @@
 
-
 cc = gcc
-clag_obj = -c
 clag_exec = -o
+clag_obj = -c
 
-#target :  prerequisite
+#target : prerequisite
 #	recipe
 
-run : variable
-	clear
-	./variable
+run : variable        				 # prerequisite
+	clear 	      				 # recipe
+	./variable    				 # recipe
 
+variable : variable.o  				 # prerequisite
+	$(cc) $(clag_exec) variable variable.o   # recipe 
 
-variable : variable.o
-	$(cc) $(clag_exec) variable variable.o
+variable.o : variable.c				 # prerequisite
+	$(cc) $(clag_obj) variable.c		 # recipe
 
-variable.o : variable.c
-	$(cc) $(clag_obj) variable.c
-
-clean :
-	sudo rm -rf *.o
-	sudo rm -rf variable
-
+clean :						 # no prerequisite
+	sudo rm -rf *.o				 # recipe
+	sudo rm -rf variable			 # recipe
